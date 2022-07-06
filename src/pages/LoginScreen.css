@@ -6,6 +6,18 @@
     width: 500px;
 }
 
+.login-form{
+    padding: 40px;
+}
+
+.welcomeText{
+    text-align: center;
+}
+
+.register{
+    margin-top: 20px;
+}
+
 .or{
     text-align: center;
 }

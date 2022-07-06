@@ -13,8 +13,8 @@ const LoginScreen = () => {
         <div className='container'>
             <div id="login-page" className="row">
                 <div className="col s12 z-depth-6 card-panel">
+                <h3 className='welcomeText'>¡Bienvenid@!</h3>
                     <form className="login-form">
-                        <div className="row"></div>
                         <div className="row">
                             <div className="input-field col s12">
                                 <i className="material-icons prefix">mail_outline</i>
@@ -30,19 +30,17 @@ const LoginScreen = () => {
                             </div>
                         </div>
                         <div className="row">
-                            <div className="input-field col s12">
-                                <button type='submit' className="btn waves-effect waves-light col s12">Ingresar</button>
+                            <div className="input-field col s6 register">
+                                <Link to='/register' className="col s12">NO TENGO CUENTA</Link>
+                            </div>
+                            <div className="input-field col s6">
+                                <button type='submit' className="btn waves-effect waves-light col s12">Iniciar sesión</button>
                             </div>
                         </div>
-                        <p className='or'>- o -</p>
+                        <p className='or'>- o registrate con google -</p>
                         <div className="row">
                             <div className="input-field col s12 googleBtn">
                                 <GoogleButton onClick={() => {console.log('google')}}/>
-                            </div>
-                        </div>
-                        <div className="row">
-                            <div className="input-field col s12">
-                                <p className="margin medium-small"><Link to='/register'>¿No tienes cuenta? Registrate aqui!</Link></p>
                             </div>
                         </div>
                     </form>
